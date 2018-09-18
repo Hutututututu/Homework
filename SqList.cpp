@@ -143,58 +143,58 @@ ElementType main()
 	
 	//test creatList
 	creatList(L1,arr,10);
-	printf("1. ÓÃÊı×é´´½¨ÁËË³Ğò±íL1");
+	printf("1. ç”¨æ•°ç»„åˆ›å»ºäº†é¡ºåºè¡¨L1");
 	
 	//test initList
 	initList(L2);
-	printf("\n\n2. ³õÊ¼»¯ÁËÊı×éL2");
+	printf("\n\n2. åˆå§‹åŒ–äº†æ•°ç»„L2");
 
 	//test listIsEmpty
 	a=listIsEmpty(L1);
 	c = listIsEmpty(L2);
-	printf("\n\n3. ÅĞ¶¨L1,L2ÊÇ·ñÎª¿Õ  L1:%d  L2:%d",a,c);
+	printf("\n\n3. åˆ¤å®šL1,L2æ˜¯å¦ä¸ºç©º  L1:%d  L2:%d",a,c);
 	
 	//test destroyList
 	destroyList(L2);
-	printf("\n\n4. Ïú»ÙÁËË³Ğò±íL2");
+	printf("\n\n4. é”€æ¯äº†é¡ºåºè¡¨L2");
 	//test showList
-	printf("\n\n5. Õ¹Ê¾Ë³Ğò±íL1ÔªËØ£º\n");
+	printf("\n\n5. å±•ç¤ºé¡ºåºè¡¨L1å…ƒç´ ï¼š\n");
 	showList(L1);
 	
 	
 	//test getElementByIndex
 	getElementByIndex(L1,4,b);
-	printf("\n\n6. Õ¹Ê¾Ë³Ğò±íÖĞ4ºÅÔªËØ");
+	printf("\n\n6. å±•ç¤ºé¡ºåºè¡¨ä¸­4å·å…ƒç´ ");
 	printf("\n4th value is %c\n\n",b);
 	
 	//test getIndexByValue
 	getIndexByValue(L1,'0',a);
-	printf("7. Õ¹Ê¾'0'Âß¼­ĞòºÅ \n");
+	printf("7. å±•ç¤º'0'é€»è¾‘åºå· \n");
 	printf("'0' index is %d\n\n",a);
 	
 	//insert 'a' to L1
-	printf("8. ½«'a'²åÈëL1\n");
+	printf("8. å°†'a'æ’å…¥L1\n");
 	b='a';
 	listInsert(L1,b,4);
 	showList(L1);
 	
 	//delete 'a' element in L1
-	printf("\n\n9. É¾³ıL1ÖĞ'a'\n");
+	printf("\n\n9. åˆ é™¤L1ä¸­'a'\n");
 	delElementByIndex(L1,4);
 	printf("\n\n");
 	showList(L1);
 	
 	//delete '1','2','3' in L1
-	printf("\n\n9. É¾³ıL1ÖĞ'1','2','3'");
+	printf("\n\n9. åˆ é™¤L1ä¸­'1','2','3'");
 	delElementByValue(L1,'1');
 	delElementByValue(L1,'2');
 	delElementByValue(L1,'3');
 
-	printf("\n\n10. Õ¹Ê¾L1ÏÖÓĞÔªËØ\n");
+	printf("\n\n10. å±•ç¤ºL1ç°æœ‰å…ƒç´ \n");
 	showList(L1);
 	
 	destroyList(L1);
-	printf("\n\n11. Ïú»ÙÁËË³Ğò±íL1\n\n\n");
+	printf("\n\n11. é”€æ¯äº†é¡ºåºè¡¨L1\n\n\n");
 
 	
 

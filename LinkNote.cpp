@@ -186,40 +186,40 @@ int main()
 	int ar2[] = { 6,5,4,3,2,1 };
 	Node * L1, *L2;
 
-	printf("´´½¨ÁËÊı×éL1£¬L2");
+	printf("åˆ›å»ºäº†æ•°ç»„L1ï¼ŒL2");
 	creatListByHead(L1, ar1, 6);
 	creatListByTail(L2, ar1, 6);
 
-	printf("\n\nÊä³öL1,L2:  ");
+	printf("\n\nè¾“å‡ºL1,L2:  ");
 	showList(L1);
 	printf("        ");
 	showList(L2);
 
-	printf("\n\nÊä³öL1³¤¶È£º ");
+	printf("\n\nè¾“å‡ºL1é•¿åº¦ï¼š ");
 	printf("%d", listLength(L1));
 
-	printf("\n\nÊä³öL1 3ºÅÔªËØ£º ");
+	printf("\n\nè¾“å‡ºL1 3å·å…ƒç´ ï¼š ");
 	int a;
 	getElementByIndex(L1, a, 3);
 	printf("%d", a);
 
-	printf("\n\nÊä³öL1 ÔªËØ3 Ë÷Òı: ");
+	printf("\n\nè¾“å‡ºL1 å…ƒç´ 3 ç´¢å¼•: ");
 	getIndexByElment(L1, 3, a);
 	printf("%d", a);
 
-	printf("\n\nL1²åÈë9\n");
+	printf("\n\nL1æ’å…¥9\n");
 	listInsert(L1, 9, 3);
 	showList(L1);
 
-	printf("\n\nL1É¾³ı9\n");
+	printf("\n\nL1åˆ é™¤9\n");
 	listDelByElement(L1, 9);
 	showList(L1);
 
-	printf("\n\nL1É¾³ı2ºÅÔªËØ\n");
+	printf("\n\nL1åˆ é™¤2å·å…ƒç´ \n");
 	listDelByIndex(L1, 2);
 	showList(L1);
 
-	printf("\n\nÏú»ÙL1 L2");
+	printf("\n\né”€æ¯L1 L2");
 	destroyList(L1);
 	destroyList(L2);
 }
